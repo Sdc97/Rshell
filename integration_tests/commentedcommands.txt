@@ -1,0 +1,17 @@
+echo "------------Commented Command Tests------------"
+echo "               #"
+echo                 #
+echo "echo hello# && echo goodbye"
+echo hello# && echo goodbye
+echo "echo #"
+echo #
+echo "#"
+#
+echo " ;#"
+ ;#
+
+echo "echo \"in the middle" #" of a quote\" "
+echo "in the middle # of a quote"
+echo "echo after a semicolon;#"
+echo after a semicolon;#
+exit

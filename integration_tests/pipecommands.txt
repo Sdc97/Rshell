@@ -1,0 +1,7 @@
+echo "-----------PIPE COMMAND TESTS--------------"
+cat < singlecommands.txt | .././rshell
+cat < ../names.txt | tr a-z A-Z > output1.txt
+cat < ../names.txt | tr a-z A-Z | tee output2.txt | tr A-Z a-z > output3.txt
+cat < ../names.txt | tr a-z A-Z; echo "Done!"
+(cat < ../names.txt) && echo "Authors of this project."
+exit

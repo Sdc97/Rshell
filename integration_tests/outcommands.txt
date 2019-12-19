@@ -1,0 +1,16 @@
+echo hello world && > h.txt
+echo nothing is supposed to be writted to h.txt "> h.txt"
+echo hello world > h.txt
+echo appending to h.txt >> h.txt && cat h.txt
+# echo nothing to h.txt > h.txt
+(ls && ls -a) > h.txt; cat h.txt
+tr a-z A-Z < h.txt >> h.txt; cat h.txt;
+echo "#####################################################"
+echo not today || echo yes today > h.txt;
+echp nothing > h.txt; cat h.txt
+(who > h.txt && cat h.txt);
+test h.txt
+(ls -a || ls -l) > h.txt
+(ls -a || ls -l > h.txt)
+                       echo \"a lot of spaces\" > h.txt && cat h.txt;
+exit

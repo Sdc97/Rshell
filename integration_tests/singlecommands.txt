@@ -1,0 +1,22 @@
+echo "------------Single Command Tests------------"
+echo "echo hello"
+echo hello
+#
+echo "cat singlecommands.txt"
+cat singlecommands.txt
+echo "ls -a"
+ls -a
+echo "pwd"
+pwd
+echo "ls -a -l"
+ls -a -l
+echo "ps"
+ps
+echo "git status"
+git status
+echo "git branch"
+git branch
+echo "echo goodbye"
+echo goodbye
+echo "exit"
+exit

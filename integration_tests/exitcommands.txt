@@ -1,0 +1,7 @@
+echo "------------Exit Tests------------"
+echo "echo dont \"exit\" yet"
+echo dont "exit" yet
+echo "echo hello; git status && git branch; pwd || exit && echo \"We should get here\""
+echo hello; git status && git branch; pwd || exit && echo "We should get here"
+echo "pwd && ls .. || echo \"Shouldn't get here\" && exit"
+pwd && ls .. || echo "Shouldn't get here" && exit

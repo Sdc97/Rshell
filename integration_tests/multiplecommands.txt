@@ -1,0 +1,26 @@
+echo "------------Start Multiple Command Tests------------"
+echo "------And Connector Tests------"
+echo "echo hello && echo world" && echo hello && echo world
+echo "echo hello && ech world" && echo hello && ech world
+echo " pwd && pwd && ls && ps && echo last but not least"
+ pwd && pwd && ls && ps && echo last but not least
+echo "------Or Connector Tests------"
+echo "ls -a || ls -l"
+ls -a || ls -l 
+echo "ls -a || l -l"
+ls -a || l -l
+echo "ech \"wont run this\" || ech \"not this either\" || echo \"But this will run\""
+ech "wont run this" || ech "not this either" || echo "But this will run"
+echo "------Mixed Operator Tests------"
+echo "echo hello && echo world || echo tests"
+echo hello && echo world || echo tests
+echo "ls -a; git status && git branch; echo \"Finished with this part\""
+ls -a; git status && git branch; echo "Finished with this part"
+echo "------Edge Case Tests------"
+echo "     ;      echo hello        ||       echo goodbye     && echo     \"MANY SPACES\""
+     ;      echo hello        ||       echo goodbye     && echo     "MANY SPACES"
+echo "echo \"      \""
+echo "      "
+echo "echo ;;;;;;"
+echo ;;;;;;
+exit

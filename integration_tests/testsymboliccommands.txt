@@ -1,0 +1,19 @@
+(echo "----------Test Symbolic Tests----------")
+test rshell
+                      test test_literal_tests.sh
+([ ../rshell])
+(([hello]) || echo "Hello is unknown")
+ls; [ -d ../src];
+((((([src])))))
+(echo "----------This directory----------" &&(pwd))
+(echo "the content of this directory are") && (ls)
+[-e rshell ]|| echo "rshell executable missing";
+[ -e test ]|| echo "test executable missing";
+([ -e /names.txt ]||(echo "names.txt file missing"))
+([-d unit_tests]) || (echo "unit_tests is missing");
+(echo "----------In assignment-system32 directory----------")
+[ -e ../rshell ]|| echo "rshell executable missing"
+[ -e ../test ]||(echo "test executable is missing");
+(                  [ ../rshell        ])
+echo this is a test
+exit

@@ -1,0 +1,9 @@
+ls > h.txt
+tr a-z A-Z < h.txt
+tr a-z A-Z < h.txt >> h.txt
+echo "nothing is happening here cat < h.txt" && (echo "here though" && cat < h.txt);
+<h.txt
+#     tr a-z A-Z < h.txt
+           (tr a-z A-Z <h.txt)
+        (   echo here > h.txt && cat < h.txt     );
+exit
